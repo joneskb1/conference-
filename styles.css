@@ -1,0 +1,127 @@
+/* general */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer, .hero  {
+    background-color: #274156;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h1 {
+    font-weight: 100;
+    color: white;
+    letter-spacing: 2px; 
+    padding: 10px;
+
+}
+
+/* layout */
+
+h1, h2, h3, a, p, .hero a {
+    text-align: center;
+    display: block;
+}
+
+nav {
+    display: -ms-flexbox;
+    display: -webkit-flexbox;
+    display: flex;
+    flex-direction: column;
+}
+
+/* header / nav / hero  */
+
+
+h2, h3 {
+    color: #AEDCC0;
+    font-weight: 300;
+    padding: 10px;
+}
+
+ 
+header div nav a {
+    font-weight: 400;
+    padding: 5px;
+}
+
+header div nav:last-child {
+    padding-bottom: 10px;
+
+}
+
+section {
+    display: -ms-flexbox;
+    display: -webkit-flexbox;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero {
+    background: lightgray;
+}
+
+h2 {
+    color: #274156;
+}
+
+.hero p {
+    color: #4C4C49;
+    font-weight: 300;
+    padding: 10px;
+}
+
+.hero a {
+    border: 1px solid #AEDCC0;
+    color: white;
+    background: #274156;
+    width: 50%;
+    padding: 5px;
+    display: inline-block;  
+    margin: 10px auto;
+    border-radius: 2px;
+}
+
+/* main */
+
+.feature-div {
+    border-bottom: 1px solid #274156;
+    padding: .5rem 1.5rem;
+}
+
+.feature-div h3 {
+    color: #274156;
+    font-weight: 400;
+}
+
+.feature-div p {
+    color: #4C4C49;
+    font-weight: 300;
+    padding: 10px;
+
+}
+
+/* footer  */
+
+footer p {
+    color: white;
+    padding: 10px;
+}
+
+footer nav a {
+    font-weight: 400;
+    padding: 5px;
+}

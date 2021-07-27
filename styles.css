@@ -5,6 +5,7 @@
     font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
+    line-height: 1.5;
 }
 
 header, footer, .hero  {
@@ -29,7 +30,7 @@ h1 {
 
 }
 
-/* layout */
+/* layout home */
 
 h1, h2, h3, a, p, .hero a {
     text-align: center;
@@ -40,10 +41,14 @@ nav {
     display: -ms-flexbox;
     display: -webkit-flexbox;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
 }
 
-/* header / nav / hero  */
+
+/* header / nav / hero home  */
 
 
 h2, h3 {
@@ -55,7 +60,7 @@ h2, h3 {
  
 header div nav a {
     font-weight: 400;
-    padding: 5px;
+    padding: 1rem;
 }
 
 header div nav:last-child {
@@ -63,15 +68,13 @@ header div nav:last-child {
 
 }
 
-section {
+.hero {
     display: -ms-flexbox;
     display: -webkit-flexbox;
     display: flex;
     flex-direction: column;
-}
+    background: #AEDCC0;
 
-.hero {
-    background: lightgray;
 }
 
 h2 {
@@ -95,7 +98,7 @@ h2 {
     border-radius: 2px;
 }
 
-/* main */
+/* main home */
 
 .feature-div {
     border-bottom: 1px solid #274156;
@@ -114,7 +117,7 @@ h2 {
 
 }
 
-/* footer  */
+/* footer home */
 
 footer p {
     color: white;
@@ -123,5 +126,107 @@ footer p {
 
 footer nav a {
     font-weight: 400;
+    padding: 1rem;
+}
+
+/* speakers welcome */
+
+
+.speaker-welcome {
+    background: #AEDCC0;
+    color: #4C4C49;
+    padding: 10px;
+}
+
+.speaker-welcome h2 {
+    padding: 5px;
+}
+
+ /* aside speakers */
+
+ aside {
+     border: 1px solid lightgray;
+     border-radius: 3px;
+     width: 70%;
+     margin: 30px auto 0;
+     padding: 5px;
+ }
+ 
+
+ aside img {
+     width: 90px;
+     padding: 10px;
+     display: block;
+     margin: 0 auto;
+    }
+
+
+ aside a {
+     color:#274156;
+     padding: 5px;
+ }
+ 
+ /* speakers */
+
+
+ .speaker {
+     padding: 15px;
+     border-bottom: 1px solid #274156;
+ }
+
+ .speaker h3 {
+     color :#274156;
+     margin: 0;
+     padding: 0;
+ }
+
+
+ .speaker h5 {
+    color: #274156;
+    text-align: center;
+    padding: 5px;
+    padding-bottom: 15px;
+}
+
+.speaker p {
+    text-align: left;
+    padding: 10px;
+    text-indent: 2rem;
+    color: #4C4C49;
+}
+
+/* schedule */
+
+.schedule-welcome {
+    background: #AEDCC0;
+    color: #4C4C49;
+    padding: 10px;
+}
+
+.schedule-welcome h2 {
+    padding: 5px;
+}
+
+/* register */
+
+.register-welcome {
+    background: #AEDCC0;
+    color: #4C4C49;
+    padding: 10px;
+}
+
+.register-welcome h2 {
+    padding: 5px;
+}
+
+/* venue */
+
+.venue-welcome {
+    background: #AEDCC0;
+    color: #4C4C49;
+    padding: 10px;
+}
+
+.venue-welcome h2 {
     padding: 5px;
 }

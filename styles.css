@@ -15,6 +15,7 @@ header, footer, .hero  {
 img {
     width: 100%;
     max-width: 100%;
+    border-radius: 3px;
 }
 
 a {
@@ -27,7 +28,7 @@ h1 {
     color: white;
     letter-spacing: 2px; 
     padding: 10px;
-
+    text-shadow: 2px 2px 2px #AEDCC0;
 }
 
 
@@ -60,6 +61,7 @@ h2, h3 {
 header div nav a {
     font-weight: 400;
     padding: 1rem;
+    border-radius: 3px;
 }
 
 header div nav a:hover, header div nav a:focus, header div nav a:active  {
@@ -165,10 +167,10 @@ footer nav a:hover, footer nav a:active, footer nav a:focus {
  /* aside speakers */
 
  aside {
-     border: 1px solid lightgray;
+     border: 1px solid #274156;
      border-radius: 3px;
      width: 70%;
-     margin: 30px auto 0;
+     margin:  0 auto;
      padding: 5px;
  }
  
@@ -195,10 +197,15 @@ footer nav a:hover, footer nav a:active, footer nav a:focus {
 
  /* speakers */
 
+ .speaker-container {
+    background: rgba(39, 65, 86, .1);
+    margin: 1rem;
+    padding: 1rem;
+}
+
 
  .speaker {
      padding: 15px;
-     border-bottom: 1px solid #274156;
  }
 
  .speaker h3 {
@@ -218,7 +225,6 @@ footer nav a:hover, footer nav a:active, footer nav a:focus {
 .speaker p {
     text-align: left;
     padding: 10px;
-    text-indent: 2rem;
     color: #4C4C49;
 }
 
@@ -402,6 +408,11 @@ tr a:active, tr a:focus, tr a:hover {
         display: block;
     }
 
+    /* speakers */
+    aside {
+        max-width: 50%;
+    }
+
 }
 
 @media screen and (min-width: 750px) {
@@ -421,6 +432,10 @@ tr a:active, tr a:focus, tr a:hover {
     .speaker-welcome h2, .speaker-welcome p, .speakers{
         width: 75%;
         margin: 0 auto;
+    }
+
+    aside {
+        max-width: 50%;
     }
 
     /* schedule  */
@@ -468,7 +483,6 @@ tr a:active, tr a:focus, tr a:hover {
 
         header h1 {
             font-size: 2rem;
-            text-shadow: 2px 1px 1px #AEDCC0;
         }
 
         header div nav a  {
@@ -482,8 +496,11 @@ tr a:active, tr a:focus, tr a:hover {
 
         /* home  */
         .hero {
-            height: 40vh;
-            padding-top: 4rem;
+            height: 45%;
+            padding-top: 3.5rem;
+        }
+        .hero a {
+            margin-bottom: 2rem;
         }
 
         .index-main {
@@ -511,9 +528,8 @@ tr a:active, tr a:focus, tr a:hover {
 
         aside  {
             height: 80%;
-            width: 150%;
+            max-width: 50%;
             margin-top: 14px;
-
         }
         
         .speaker {
@@ -554,7 +570,7 @@ tr a:active, tr a:focus, tr a:hover {
 
         iframe {
             width: 100%;
-            height: 40vh;
+            max-height: 40vh;
         }
      
         /* register */
@@ -572,6 +588,120 @@ tr a:active, tr a:focus, tr a:hover {
             width: 100%;
             margin: 2rem;
         }
+        .register-info p, .why-attend, ul li {
+            text-align: left;
+        }
+
+        .register-info h2 {
+            text-align: left;
+        }
+
+
+}
+
+
+@media screen and (min-width: 1100px) {
+    
+    /* home */
+
+    header h1 {
+        font-size: 3rem;
+    }
+
+    .index-main {
+        padding: 3rem;
+    }
+    .feature-div {
+        border: none;
+    }
+    .hero h2 {
+        font-size: 2rem;
+        width: 60%;
+
+    }
+    .hero p {
+        font-size: 1.5rem;
+        width: 60%;
+
+    }
+    .hero a {
+        margin-bottom: 2rem;
+        max-width: 25%;
+    }
+ 
+    /* speakers */
+    aside  {
+        max-width: 20%;
+    }
+
+    .speaker {
+        width: 70%;
+    }
+    .speaker-welcome h2 {
+        font-size: 2rem;
+        width: 60%;
+    }
+
+    .speaker-welcome p {
+        font-size: 1.5rem;
+        width: 60%;
+        font-weight: 300;
+    }
+
+    .speaker-container {
+        width: 80%;
+        margin: 2rem auto;
+    }
+ 
+
+    /* schedule */
+
+    .schedule-welcome h2 {
+        font-size: 2rem;
+        width: 60%;
+    }
+
+    .schedule-welcome p {
+        font-size: 1.5rem;
+        width: 60%;
+        font-weight: 300;
+    }
+    table {
+        width: 60%;
+    }
+ 
+    /* venue  */
+
+    .venue-welcome h2 {
+        font-size: 2rem;
+        width: 60%;
+    }
+
+    .venue-welcome p {
+        font-size: 1.5rem;
+        width: 60%;
+        font-weight: 300;
+    }
+
+    .hotel-location, .venue-location {
+        width: 60%;
+    }
+
+    /* register */
+
+    .register-welcome h2 {
+        font-size: 2rem;
+        width: 60%;
+    }
+
+    .register-welcome p {
+        font-size: 1.5rem;
+        width: 60%;
+        font-weight: 300;
+    }
+    .register-pass {
+        width: 60%;
+    }
 
 
 }

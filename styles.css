@@ -30,7 +30,9 @@ h1 {
 
 }
 
-/* layout home */
+
+/* header / nav / hero home  */
+
 
 h1, h2, h3, a, p, .hero a {
     text-align: center;
@@ -46,9 +48,6 @@ nav {
     justify-content: center;
 
 }
-
-
-/* header / nav / hero home  */
 
 
 h2, h3 {
@@ -78,6 +77,8 @@ header div nav:last-child {
     display: flex;
     flex-direction: column;
     background: #AEDCC0;
+    background: linear-gradient(to right, #a1d3b0, #f6f1d3);
+
 
 }
 
@@ -96,7 +97,7 @@ h2 {
     color: white;
     background: #274156;
     width: 50%;
-    padding: 5px;
+    padding: 10px;
     display: inline-block;  
     margin: 10px auto;
     border-radius: 2px;
@@ -127,7 +128,7 @@ h2 {
 
 }
 
-/* footer home */
+/* footer  */
 
 footer p {
     color: white;
@@ -153,6 +154,8 @@ footer nav a:hover, footer nav a:active, footer nav a:focus {
     background: #AEDCC0;
     color: #4C4C49;
     padding: 10px;
+    background: linear-gradient(to right, #AEDCC0, #f6f1d3);
+
 }
 
 .speaker-welcome h2 {
@@ -187,7 +190,6 @@ footer nav a:hover, footer nav a:active, footer nav a:focus {
  aside a:hover, aside a:focus, aside a:active {
     color: lightslategray;
 }
-
 
 
 
@@ -227,6 +229,8 @@ footer nav a:hover, footer nav a:active, footer nav a:focus {
     background: #AEDCC0;
     color: #4C4C49;
     padding: 10px;
+    background: linear-gradient(to right, #AEDCC0, #f6f1d3);
+
 }
 
 
@@ -293,7 +297,6 @@ button:hover, button:active, button:focus {
     color: #AEDCC0;
     background-color: #274156;
     font-weight: 600;
-
 }
 
 
@@ -301,6 +304,7 @@ button:hover, button:active, button:focus {
 
 .venue-welcome {
     background: #AEDCC0;
+    background: linear-gradient(to right, #AEDCC0, #f6f1d3);
     color: #4C4C49;
     padding: 10px;
 }
@@ -327,7 +331,6 @@ button:hover, button:active, button:focus {
 .venue-location p, .hotel-location p {
     color:#4C4C49;
     padding-bottom: 1rem;
-
 }
 
 iframe {
@@ -339,6 +342,8 @@ iframe {
     background: #AEDCC0;
     color: #4C4C49;
     padding: 10px;
+    background: linear-gradient(to right, #AEDCC0, #f6f1d3);
+
 }
 
 .schedule-welcome h2 {
@@ -355,14 +360,12 @@ th, td, tr a, table h4 {
     font-weight: 300;
     text-align: left;
     color: #4C4C49;
-
 }
 
 thead th  {
     color: #274156;
     font-size: 1.25rem;
     font-weight: 400;
-
 }
 
 tr td {
@@ -383,5 +386,192 @@ tbody td {
 
 tr a:active, tr a:focus, tr a:hover {
     color: lightslategray;
+
+}
+
+
+
+/* media query  */
+
+@media screen and (min-width: 500px) {
+
+    /* venue maps  */
+    iframe {
+        width: 75%;
+        margin: 0 auto;
+        display: block;
+    }
+
+}
+
+@media screen and (min-width: 750px) {
+
+    /* home hero & main */
+    .index-main, .hero h2, .hero p {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .hero a {
+        width: 25%;
+    }
+
+
+    /* speakers */
+    .speaker-welcome h2, .speaker-welcome p, .speakers{
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    /* schedule  */
+    .schedule-welcome h2, .schedule-welcome p, table {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    /* venue  */
+    .venue-welcome h2, .venue-welcome p, .hotel-location, .venue-location {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .hotel-location, .venue-location {
+        margin: 2rem auto;
+    }
+    
+    .hotel-location p, .venue-location p {
+        padding-bottom: 2rem;
+    }
+
+    /* register */
+
+    .register-welcome h2, .register-welcome p, .register-pass{
+        width: 75%;
+        margin: 0 auto;
+    }
+}
+
+
+
+@media screen and (min-width: 900px) {
+
+        /* header & footer */
+        header, footer {
+            display: -ms-flexbox;
+            display: -webkit-flexbox;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            text-shadow: 2px 1px 1px #AEDCC0;
+        }
+
+        header div nav a  {
+            padding: 1rem;
+        }
+
+        header div h3,  header div nav {
+            text-align: right;
+        }
+
+
+        /* home  */
+        .hero {
+            height: 40vh;
+            padding-top: 4rem;
+        }
+
+        .index-main {
+            display: -ms-flexbox;
+            display: -webkit-flexbox;
+            display: flex;
+            width: 100%;
+        }
+
+        .feature-div {
+            width: 100%;
+        }
+        
+        /* speaker */
+
+        .speaker-welcome {
+            padding: 3rem;
+        }
+
+        .speaker-container {
+            display: -ms-flexbox;
+            display: -webkit-flexbox;
+            display: flex;  
+        }
+
+        aside  {
+            height: 80%;
+            width: 150%;
+            margin-top: 14px;
+
+        }
+        
+        .speaker {
+            border-bottom: none;
+            margin-bottom: 2rem;
+        }
+
+        /* schedule */
+
+        .schedule-welcome {
+            padding: 3rem;
+
+        }
+
+        table {
+            margin: 4rem auto;
+        }
+
+        /* venue  */
+
+        .venue-welcome {
+            padding: 3rem;
+
+        }
+        
+        .hotel-location, .venue-location {
+            display: -ms-flexbox;
+            display: -webkit-flexbox;
+            display: flex;
+        }
+
+        .info-div {
+            margin: 2rem;
+            width: 40%;
+            align-content: center;
+            justify-content: center;
+        }
+
+        iframe {
+            width: 100%;
+            height: 40vh;
+        }
+     
+        /* register */
+        .register-welcome {
+            padding: 3rem;
+        }
+
+        .register-pass {
+            display: -ms-flexbox;
+            display: -webkit-flexbox;
+            display: flex;
+        }
+
+        .register-info, form {
+            width: 100%;
+            margin: 2rem;
+        }
+
 
 }
